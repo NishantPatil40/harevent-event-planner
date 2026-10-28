@@ -1,0 +1,175 @@
+ROLE
+You are a senior front-end developer. Recreate the attached Figma design of the HarEvent "Event Planner" home page pixel-perfectly. Follow the screenshots exactly: layout, spacing, colors, fonts, copy, and icons. Do not redesign, add sections, or "improve" anything. Keep all text exactly as written, including any spelling quirks.
+
+STACK
+React + Tailwind CSS (or plain HTML/CSS if I say so). Desktop design width is 1440px. Content max-width is 1280px with 48px side padding. Fully responsive: 4 cols → 2 → 1 for cards, nav collapses to a hamburger below 1024px.
+
+LOGO (use as provided, do NOT redraw)
+- Use the uploaded logo image (Image 9) exactly as it is: a circular gradient ring (magenta → orange) around a serif "HE" monogram with a swoosh, the serif wordmark "HarEvent" in a pink → orange gradient, and a thin divider line with dots and a small lotus-leaf ornament below.
+- Crop the extra white padding. Make the background transparent (PNG/SVG), or use mix-blend-mode: multiply on white.
+- Do not recolor, re-type, or stretch it. Keep the aspect ratio.
+- Navbar: about 72px wide, left-aligned. Footer: about 140–150px wide. Favicon: crop only the circular "HE" monogram.
+
+DESIGN TOKENS
+- Primary crimson-pink: #D6105A
+- Accent orange: #F97316
+- Brand gradient: linear-gradient(90deg, #D6105A → #F97316) for buttons and highlights
+- Cream section background: #FDF0E0
+- White: #FFFFFF
+- Heading dark: #231519
+- Body muted plum-grey: #6B525A
+- Soft pink tint (chips, icon circles, active nav): #FCE4EC
+- Card radius: 20px. Pill buttons: fully rounded. Soft shadow: 0 8px 30px rgba(120,40,70,0.08)
+- Fonts: "Poppins" for nav, headings, body, and buttons. "Playfair Display" for the serif hero headings (regular + italic) and the About heading. A handwritten script (e.g. "Dancing Script") for "detail matters…".
+- Eyebrow labels: uppercase, letter-spacing 0.15em, 14px, pink, semibold.
+- Section headings: Poppins semibold, 40–44px, dark.
+- A thin 3px dark-purple line sits at the very top of the page.
+
+=====================================================
+SECTION 1 – NAVBAR (white, height ~72px, soft bottom shadow)
+=====================================================
+Left: logo. Center links in this order: Home, Event Planner, Event Category, Vendor Category, Blogs, About Us, Contact Us. "Event Planner" is the ACTIVE item: pink text on a #FCE4EC rounded-8px background. Other links are dark, Poppins medium 16px.
+Right: a rounded search pill (light pinkish-grey background, 1px border, magnifier icon, placeholder: Search "Royal Moments"…) and a "Login" button (solid #D6105A pill, white bold text, user icon on the left).
+
+=====================================================
+SECTION 2 – HERO (full-width, ~600–650px tall)
+=====================================================
+- Background photo: a groom and bride holding hands, releasing red balloons, with guests around a pool. Cover-fit, with a mauve/dark-plum gradient overlay (darker on the left, ~55% opacity) so the white text is readable.
+- Badge pill (top-left of the text block): translucent grey-white background, orange uppercase letter-spaced text with a small circle-check icon: "EVENT PLANNING MADE SIMPLE".
+- H1 line 1: "Dream Day" (Playfair Display, regular, white, ~72px).
+- H1 line 2: "Into a Timeless Story" (Playfair Display italic, white, ~72px).
+- Paragraph (white, 20px, max-width ~830px): "From venues and decor to photography, catering and entertainment, discover verified event planners who can bring your dream celebration together seamlessly."
+- Two buttons, 56px tall pills, side by side:
+  1) "Send an Inquiry": frosted translucent-grey background, dark text, medium weight.
+  2) "Find an Event Planner": brand gradient, white bold text.
+- Below the hero, the background changes to cream.
+
+=====================================================
+SECTION 3 – FEATURED PLANNERS (cream background)
+=====================================================
+Header row:
+- Eyebrow: "FEATURED PLANNERS"
+- H2: "Explore Verified Event Planners"
+- Sub: "Discover top-rated event planning professionals for weddings, grand milestones, and corporate summits."
+- Right-aligned button, gradient pill: "View All Planer →" (keep this spelling exactly)
+
+Filter chips (pills): "All Occasions" (ACTIVE: solid pink, white text), "Weddings", "Birthdays", "Corporate Summits", "Anniversaries & Galas" (inactive: white, thin border, dark text). Clicking a chip filters the cards.
+
+Planner cards (4 in a row, white, radius 20, shadow). Each card has:
+- Top image (~300px tall, cover). Top-left: a white translucent pill badge with an orange icon + uppercase text. Top-right: a circular white translucent heart (wishlist) button. Bottom-left on the image: a dark translucent chip with the price.
+- Body: row 1 = orange star icon + bold orange rating + grey review count in brackets (left), and map-pin + location (right). Then the name (Poppins semibold 22px), the category line (pink, 15px medium), a 2-line grey description clamped with an ellipsis, 2–3 small tag chips (light grey-pink, 13px), and two buttons at the bottom: "Send Inquiry" (solid pink pill, white bold) and "View Profile" (cream background, thin border, dark text).
+
+Card data:
+1. Image: a couple in a red turban and a green saree, namaste pose, under string lights at night. Badge: "SUPER PLANNER". Price: "₹2,50,000 onwards". Rating: 4.8 (142). Location: Koregaon Park, Pune. Name: Royal Moments Events. Category: Wedding & Event Planning. Desc: "Full-service bespoke planning, royal mandaps, sangeet choreographies,…" Tags: Wedding, Engagement, Sangeet.
+2. Image: a couple cheek-to-cheek (groom in cream sherwani, bride in hot-pink lehenga) with marigold garlands. Badge: "TOP RATED" (star icon). Price: "₹3,20,000 onwards". Rating: 4.9 (86). Location: Pune & Mumbai. Name: Dream Day Planners. Category: Luxury Wedding Direction. Desc: "End-to-end luxury wedding styling, destination setups in Goa &…" Tags: Destination, Reception.
+3. Image: a couple embracing under a glowing floral arch at night with petals falling. NO badge. Price: "₹1,80,000 onwards". Rating: 4.7 (104). Location: Baner, Pune. Name: Elegant Celebrations. Category: Social & Milestone Events. Desc: "Artful styling and smooth timeline execution for silver anniversaries,…" Tags: Anniversary, Birthday.
+4. Image: a bride and groom walking in a festive procession at night, surrounded by guests. Badge: "PREMIUM" (award icon). Price: "₹4,00,000 onwards". Rating: 4.6 (76). Location: Viman Nagar, Pune. Name: The Event Studio. Category: Production & Corporate Galas. Desc: "Full-scale AV setup, celebrity emcees, live concert lighting, and…" Tags: Corporate, Concerts.
+
+=====================================================
+SECTION 4 – FIND A PLANNER FOR YOUR EVENT (white background)
+=====================================================
+- Eyebrow: "PLAN FOR EVERY OCCASION"
+- H2: "Find a Planner for Your Event"
+- Sub: "Browse specialists tuned to the unique customs, scale, and rhythms of your upcoming celebration."
+- 3×2 grid of image cards (radius 16, ~360px tall, shadow). Each has a background photo with a bottom-weighted color overlay. Text sits bottom-left: small orange uppercase "N+ VENDORS", a white bold title (24px), a white one-line description, and an "Explore Planners →" link. Hover: slight zoom plus lift.
+
+Cards:
+1. "4,200+ VENDORS" – Weddings – "Full wedding coordination, decor, mandap" – photo: a pink floral mandap with a Ganesh rangoli, pink-purple overlay. Count orange, link white.
+2. "1,850+ VENDORS" – Birthdays & Milestones – "Themed kids parties, 50th golden jubilees" – photo: a gold and white balloon arch, family cutting a cake. Count orange, link orange.
+3. "1,400+ VENDORS" – Engagements & Rokas – "Ring exchange setups, floral backdrops" – photo: a hand with a ring, soft pink-red gradient overlay. Count white, link white.
+4. "950+ VENDORS" – Corporate Summits & Galas – "Conferences, dealer meets, executive banquets" – photo: people with confetti, dark overlay. Count orange, link orange.
+5. "820+ VENDORS" – Anniversary Celebrations – "Silver jubilees, romantic banquets" – photo: a crowd in a warm-lit hall, crimson overlay. Count white, link white.
+6. "1,150+ VENDORS" – Parties & Festive Soirees – "Cocktail nights, Diwali card parties" – photo: purple/magenta confetti party. Count orange, link orange.
+
+=====================================================
+SECTION 5 – OUR EVENT PLANNING SERVICES (cream background)
+=====================================================
+- Centered eyebrow with side lines: "—— WHAT WE DO ——"
+- H2 centered: "Our Event Planning Services"
+- Sub centered (max ~1000px): "From the first spark of inspiration to the final celebration toast — we handle every detail with love, flair, and precision."
+- 5 equal white cards (radius 20, 1px light-pink border), content centered. Each has a 70px circle icon (white line icon), a bold title, a grey description, and a small pink bold "Learn More →". Circle colors alternate: pink, orange, pink, orange, pink.
+1. Pink – calendar-with-refresh icon – "Full Event Planning" – "End-to-end planning and creative production for a completely stress-free, magical event."
+2. Orange – flower/lotus icon – "Theme & Decor Design" – "Unique themes, royal mandap architecture, floral tapestries & ambient lighting setups."
+3. Pink – camera icon – "Vendor Management" – "Best caterers, photographers, entertainment artists, curated strictly for quality and trust."
+4. Orange – palace/fort icon – "Destination Celebrations" – "Palace forts in Rajasthan, sea-facing lawns in Goa, and luxury resorts across India."
+5. Pink – calendar icon – "On-Day Coordination" – "Relax and relish every auspicious moment — our seasoned coordinators handle all timing & logistics."
+
+=====================================================
+SECTION 6 – ABOUT HAREVENT (white background, 2 columns)
+=====================================================
+Left: a large rounded image (radius 16, soft shadow) of an Indian groom (pink-peach floral sherwani) and a bride (red-pink lehenga with floral garlands) in a banquet hall with elders sitting behind. A white note card overlaps the image's top-left corner, rotated about -4°, with a shadow: "Because every" (serif) and below it "detail matters… ♡" (pink handwritten script, italic).
+Right:
+- Eyebrow: "ABOUT HAREVENT"
+- H2 line 1: "More Than Planners," (Playfair Display, dark, ~44px)
+- H2 line 2: "We're Your Celebration Partners" (Playfair Display italic, pink)
+- Paragraph (grey, 18px): "We believe every milestone has its own soul, and so should every event. At HarEvent, we blend rich Indian cultural warmth, authentic regional traditions, and seamless modern precision to curate affairs that feel unmistakably yours — grand, intimate, and unforgettable."
+- A thin pink divider line, then a 2×2 feature grid. Each item has a 50px circle icon (pale pink background, pink/orange line icon) on the left, a bold title, and a small grey description. All four titles read "Stress-Free Experience":
+  • (heart icon) "Every concept tailored to your taste and family rituals."
+  • (paint-palette/brush icon) "Fresh aesthetic palettes, stage sets & floral wonders."
+  • (handshake-diamond icon) "Strictly vetted caterers, lighting artists and crews."
+  • (lotus/diya icon, orange) "We manage the countdown so you live the magic."
+- Button (gradient pill, white uppercase bold): "OUR STORY & PLANNERS →"
+
+=====================================================
+SECTION 7 – HOW TO CHOOSE THE RIGHT EVENT PLANNER (cream)
+=====================================================
+- Centered eyebrow: "◇ PLANNER GUIDE ◇" (orange diamond icons on both sides, with side lines)
+- H2: "How to Choose the Right " (dark) + "Event Planner" (pink)
+- Sub: "Follow these 4 simple steps to evaluate credentials, align visions, and hire with total confidence."
+- 4 columns joined by a faint horizontal peach line behind the circles. Each column: a 100px circle icon (pink, the 4th orange), a small gradient number badge (01–04) with a white ring overlapping the circle's bottom edge, a bold title, a short pink-orange gradient underline, and a centered grey paragraph.
+01 "Check Experience" – magnifier + chart icon – "Look for planners who regularly orchestrate celebrations comparable in guest scale, venue complexity, and visual aesthetic."
+02 "Review Services" – checklist icon – "Understand what vendor contract negotiations, architectural styling, and day-of execution staff are bundled into the quote."
+03 "Discuss Requirements" – chat bubbles icon – "Share your tentative auspicious dates, preferred city zones, estimated headcounts, decor moodboards, and budgetary upper limits."
+04 "Connect & Decide" – handshake icon (orange) – "Compare transparent scopes, review client testimonials on HarEvent, schedule video consultations, and lock dates."
+- Trust bar below: a full-width white rounded card (radius 24, light-pink border) with 3 items separated by vertical dividers. Each item has a pink/orange icon, a bold title, and a small grey line:
+  • (shield-check) "Verified Credentials" – "Background checked & portfolio vetted"
+  • ($ with check) "Direct Transparent Pricing" – "No hidden commissions or inflated markups"
+  • (shield) "HarEvent Safe Assurance" – "Payment milestone tracking & dispute support"
+
+=====================================================
+SECTION 8 – CONCIERGE CTA BANNER (white background section)
+=====================================================
+A large rounded banner (radius ~32, padding ~60px, big soft shadow) with a gradient: crimson (#D6105A) → deep burgundy/magenta in the middle → orange (#F97316) on the right.
+Left:
+- Small translucent pill badge: "COMPLIMENTARY CONCIERGE MATCH" (white uppercase, bold, letter-spaced)
+- H2 (white, ~44px bold): "Not Sure Which Planner Is Right for You?"
+- Paragraph (white, 18px): "Tell us about your event vision, guest count, and expected budget. Our dedicated wedding & event curation concierge will handpick 3 pre-vetted planning teams customized specifically to your celebration."
+Right:
+- Button (orange→pink gradient pill, white bold, paper-plane icon): "Send an Inquiry Now"
+- Below it, a white underlined link: "Or Explore All Planners on Your Own →"
+
+=====================================================
+SECTION 9 – LATEST FROM HAREVENT (cream, blog)
+=====================================================
+- Eyebrow: "GUIDES & INSPIRATION"
+- H2: "Latest From HarEvent"
+- Sub: "Expert wedding and party planning advice from industry veterans."
+- Right button (gradient pill): "Read All Artical →" (keep this spelling exactly)
+- 3 white cards (radius 20, shadow): top image (~240px), then the meta line (grey, 14px: date • read time), the title (Poppins semibold 22px), a 2-line grey excerpt, and a pink bold "Read More →".
+1. Image: photographers shooting a wedding ceremony outdoors. "Oct 14, 2024 • 5 min read" – "How to Choose the Right Wedding Photographer"
+2. Image: a red-and-gold royal stage with cream sofas. "Nov 02, 2024 • 7 min read" – "10 Things to Check Before Booking an Event Venue"
+3. Image: a bride and groom with a flower-petal shower. "Nov 18, 2024 • 6 min read" – "How to Plan a Beautiful Event on a Budget"
+Excerpt for all 3 (as in the design): "From cinematic candid moments to traditional family portraits, understand p"
+
+=====================================================
+SECTION 10 – FOOTER (white)
+=====================================================
+4-column layout:
+- Col 1: the logo (use the uploaded logo), the text "Connecting customers with trusted event professionals across India. Weddings, banquets, décor, and catering made seamless.", then 4 round pink social icons (Instagram, YouTube, LinkedIn, Facebook), then 2 pale-pink pill badges: "100% VERIFIED" (orange text, circle-check icon) and "PAN INDIA" (pink text, shield icon).
+- Col 2 "Quick Links": Home, Event Planner, Event Category, Vendor Category, Blogs
+- Col 3 "Company": About HarEvent, Contact Us, Privacy Policy, Terms & Conditions
+- Col 4 "For Vendors": Join as Vendor, Vendor Login, Vendor Registration, Partner Guidelines
+(Column titles: bold dark 20px. Links: grey 17px, pink on hover.)
+- Bottom bar: a full-width cream rounded strip, centered text: "© 2025 HarEvent India Private Limited. All rights reserved."
+
+FLOATING ELEMENT
+A fixed "Chat with us" button at the bottom-right: gradient pink pill, white bold text, chat-bubble icon, with a soft pink glow shadow. It is visible on all sections.
+
+INTERACTIONS
+- Hover on cards: translateY(-4px) plus a deeper shadow. Hover on buttons: slightly brighter or darker, with a smooth 200ms transition.
+- The heart button toggles filled pink.
+- Filter chips filter the planner cards (use sample data).
+- Navbar links smooth-scroll or route to their sections.
+
+OUTPUT
+Reusable components (Navbar, Hero, PlannerCard, OccasionCard, ServiceCard, StepItem, BlogCard, Footer, ChatButton), data kept in arrays/JSON, and images as placeholders if the original photos can't be extracted. Match the screenshots 1:1.
